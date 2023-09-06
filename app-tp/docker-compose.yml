@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build:
+        dockerfile: Dockerfile
+        context: .
+    image: but3/app-ci5
+    container_name: app-ci5
+    ports:
+      - 9999:3000
